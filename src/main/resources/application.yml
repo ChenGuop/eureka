@@ -1,0 +1,15 @@
+server:
+  port: 8761
+eureka:
+  client:
+#  客户端是否不想被发现
+    registerWithEureka: false
+#  是否从eureka获取注册表信息
+    fetchRegistry: false
+  server:
+#    服务端自我保护机制 开发环境下关闭
+    enable-self-preservation: false
+#    waitTimeInMsWhenSyncEmpty:
+spring:
+  application:
+    name: eureka
